@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import RedBg from "../assets/redbg.jpg"
 
 const validationSchama = Yup.object({
     name: Yup.string()
@@ -46,12 +47,12 @@ const Contact = () => {
 
     return (
         <>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2022/12/hero-background.jpg')] p-20 h-[500px]" >
-                <p className="text-customPrimaryColor text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Contact Us</span></p>
+            <section style={{ backgroundImage: `url(${RedBg})` }} className="p-20 h-[500px]" >
+                <p className="text-customSecondaryBlack text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Contact Us</span></p>
                 <h1 className="pt-8 text-customWhiteColor font-extrabold text-h1sm md:text-h1md lg:text-h1lg leading-normal font-ralway">CONTACT US</h1>
             </section>
-            <section className="relative h-[1050px] md:h-[700px] lg:[650px] bg-[#f6f6f6]">
-                <div className="absolute bg-white p-10 w-[90%] sm:w-[80%] md:w-[70%] left-[50%] translate-x-[-50%] rounded-2xl top-[-200px] md:top-[-250px] h-[1200px] md:h-[820px] lg:[780px] shadow p-8">
+            <section className="relative h-[1100px] md:h-[700px] lg:[650px] bg-[#f6f6f6]">
+                <div className="absolute bg-white p-6 md:p-10 w-[90%] sm:w-[80%] md:w-[70%] left-[50%] translate-x-[-50%] rounded-2xl top-[-200px] md:top-[-250px] h-[1250px] md:h-[820px] lg:[780px] shadow">
                     <h1 className="text-center font-extrabold text-h1sm md:text-h1md lg:text-h1lg leading-normal text-customPrimaryBlack font-ralway">REQUEST A QUOTE</h1>
                     <p className="text-center leading-normal text-md text-[#c1c1c1] font-gotham">Please fill out the form and one of our experts will contact you as soon as possible.</p>
                     <div className="m-8">

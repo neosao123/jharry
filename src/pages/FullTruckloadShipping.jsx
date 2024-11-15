@@ -3,6 +3,9 @@ import { PiTruckFill } from "react-icons/pi";
 import { RiTruckFill } from "react-icons/ri";
 import { TbUrgent } from "react-icons/tb";
 import Slider from "react-slick";
+import TruckBgImage from "../assets/truckBgImage.jpg";
+import Truck from "../assets/truck.jpg"
+import WhiteTruck from "../assets/whiteTruck.png";
 
 const FullTruckLoadShipping = () => {
 
@@ -45,21 +48,22 @@ const FullTruckLoadShipping = () => {
 
     return (
         <>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/03/main_screen.webp')] bg-no-repeat bg-cover bg-center p-6 lg:p-20">
+            <section style={{ backgroundImage: `url(${TruckBgImage})` }} className="bg-no-repeat bg-cover bg-center p-6 lg:p-20 relative">
+                <div className="absolute bg-black bg-opacity-50 -z-10 top-0 bottom-0 left-0 right-0" ></div>
                 <p className="text-customPrimaryColor text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Full Trcuckload Shipping</span></p>
                 <h1 className="text-h1sm md:text-h1md lg:text-h1lg text-white font-ralway md:mb-[15px]">FULL TRUCKLOAD (FTL) SERVICE</h1>
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Reliable, Timely, and Cost-Effective Freight Solutions for Large Shipments</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When you have a large shipment that requires the full use of a truck, look no further than Full Truckload (FTL) service with J&Harry Express. FTL is the ideal solution for businesses with large or high-priority freight that needs to reach its destination quickly, safely, and securely. With our FTL services, your shipment gets the exclusive use of an entire truck, ensuring that it moves directly from point A to point B without the delays or stops associated with Less Than Truckload (LTL) shipping.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >Our team of experienced professionals and well-maintained fleet ensures that your goods arrive on time and in excellent condition—no matter the distance. Whether you’re shipping across town, across the country, or even across the border, we have the right solution for your needs.</p>
-                <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
-            </section>
+                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+            </section >
             <section className="p-6 md:p-20">
                 <h1 className="text-h1sm md:text-h1md lg:text-h1lg text-customSecondaryBlack font-ralway md:mb-[15px]">WHAT IS FULL TRUCKLOAD (FTL) SERVICE?</h1>
                 <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >The Fastest, Most Efficient Service Solution for Large Loads</h4>
                 <p className="text-customSecondaryBlack text-lg max-w-[1200px] font-gotham mt-4" >Full Truckload (FTL) service refers to shipments where the entire truck is dedicated to a single customer’s freight. This means that your goods are the only ones being transported on that truck, and the truck will travel directly from the pickup location to the destination without making additional stops to load or unload other shipments.</p>
                 <p className="text-customSecondaryBlack text-lg max-w-[1200px] font-gotham mt-2" >FTL service is the most efficient option for large shipments, high-priority freight, or time-sensitive deliveries. It offers faster transit times and more direct routes compared to LTL service, making it an ideal choice for businesses that need to move large quantities of goods or need quick, uninterrupted delivery.</p>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" >HOW FTL SERVICE WORKS</h2>
                     <h4 className="mt-4 text-5xl font-extrabold text-white text leading-normal font-ralway" >The Seamless Process for Large Shipments</h4>
@@ -173,7 +177,7 @@ const FullTruckLoadShipping = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" >TYPES OF FREIGHT IDEAL FOR FTL SERVICE</h2>
                     <p className="text-white text-lg max-w-[1200px] font-gotham mt-4" >Full Truckload service is ideal for a wide variety of freight types, especially when the volume is large or the delivery timeline is critical. Here are some examples of freight that typically benefits from FTL service:</p>
@@ -228,18 +232,15 @@ const FullTruckLoadShipping = () => {
                     </Slider>
                 </div>
             </section>
-            <section className="relative md:pt-[0px]">
-                <div className="bg-customPrimaryColor p-6 md:hidden border-0" >
-                    <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
-                </div>
-                <div className="bg-customPrimaryColor p-6 md:py-20 md:px-20 border-0">
-                    <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway md:max-w-[50%]">GET A QUOTE<br className="lg:hidden" /> FOR FTL <br />SERVICE</h2>
-                    <p className="text-lg my-5 text-white mt-4 max-w-[450px] font-gotham" >Ready to ship your large freight? Get in touch with us today for a free, no-obligation quote for your Full Truckload shipping needs. Our team will provide you with a competitive rate and work with you to create the best shipping solution for your business.</p>
-                    <p className="text-lg my-5 text-white mt-4 max-w-[450px] font-gotham" >Simply provide us with the details of your shipment, including its size, weight, and delivery destination, and we’ll get back to you with a tailored shipping solution.</p>
+            <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
+                <div className="p-6 md:w-[60%]">
+                    <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway">GET A QUOTE<br className="lg:hidden" /> FOR FTL <br />SERVICE</h2>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to ship your large freight? Get in touch with us today for a free, no-obligation quote for your Full Truckload shipping needs. Our team will provide you with a competitive rate and work with you to create the best shipping solution for your business.</p>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Simply provide us with the details of your shipment, including its size, weight, and delivery destination, and we’ll get back to you with a tailored shipping solution.</p>
                     <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
                 </div>
-                <div className="hidden md:block md:absolute bottom-[70%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px] md:bottom-[35%] lg:bottom-[100px]" >
-                    <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
+                <div className="md:w-[40%]">
+                    <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />
                 </div>
             </section>
         </>

@@ -6,6 +6,8 @@ import { IoLocation } from "react-icons/io5";
 import { RiTruckFill } from "react-icons/ri";
 import { PiTruckFill } from "react-icons/pi";
 import { TbUrgent } from "react-icons/tb";
+import Truck from "../assets/truck.jpg";
+import WhiteTruck from "../assets/whiteTruck.png"
 
 const Dashboard = () => {
 
@@ -72,7 +74,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="p-6 md:p-20">
                     <h1 className="text-customWhiteColor text-h1sm md:text-h1md lg:text-h1lg font-extrabold leading-normal font-ralway">OUR KEY BENEFITS</h1>
                 </div>
@@ -250,18 +252,15 @@ const Dashboard = () => {
                     <p className="mt-6 text-customSecondaryBlack leading-normal text-md md:max-w-[95%] font-gotham">J&Harry Express serves clients across the nation, offering transportation solutions that meet the needs of businesses large and small. Wherever your goods need to go, we’re ready to make it happen.</p>
                 </div>
             </section>
-            <section className="relative md:pt-[0px]">
-                <div className="bg-customPrimaryColor p-6 md:hidden border-0" >
-                    <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
-                </div>
-                <div className="bg-customPrimaryColor p-6 md:py-20 md:px-20 border-0">
-                    <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway md:max-w-[50%]">REQUEST A FREE QUOTE TODAY</h2>
-                    <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">Let’s Get Your Freight Moving</h4>
-                    <p className="text-lg my-5 text-white mt-4 sm:max-w-[280px] xl:max-w-[550px] font-gotham" >Ready to streamline your shipping process with a reliable, cost-effective trucking partner? Get in touch with us today to request a free quote. Whether you need full truckload shipping, expedited delivery, or specialized hauling, we’ll provide you with an accurate estimate tailored to your needs.</p>
+            <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
+                <div className="p-6 md:w-[60%]">
+                    <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway">REQUEST A FREE QUOTE TODAY</h2>
+                    <h4 className="mt-4 text-5xl font-extrabold text-white leading-normal font-ralway ">Let’s Get Your Freight Moving</h4>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to streamline your shipping process with a reliable, cost-effective trucking partner? Get in touch with us today to request a free quote. Whether you need full truckload shipping, expedited delivery, or specialized hauling, we’ll provide you with an accurate estimate tailored to your needs.</p>
                     <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
                 </div>
-                <div className="hidden md:block md:absolute bottom-[70%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px] md:bottom-[35%] lg:bottom-[100px]" >
-                    <img className="md:w-[350px] lg:w-[600px] xl:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
+                <div className="md:w-[40%]">
+                    <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />
                 </div>
             </section>
         </>

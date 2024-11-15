@@ -66,10 +66,10 @@ p {
 
 .slick-dots li button:before {
     font-size: 18px !important;
-    color: #202020 !important;
+    color: #ffffff !important;
 }
 
 
 .slick-dots li.slick-active button:before {
-    color: #20c4f4 !important;
+    color: red !important;
 }

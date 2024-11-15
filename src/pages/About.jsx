@@ -5,6 +5,7 @@ import { TbUrgent } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import BlurImage from "../assets/blurvan.png";
+import Truck from "../assets/truck.jpg"
 
 const About = () => {
 
@@ -82,7 +83,7 @@ const About = () => {
                     <p className="text-md leading-normal text-customSecondaryBlack font-gotham">We believe in providing value. That’s why we offer competitive rates for all our services, helping you save money on your shipping costs without sacrificing quality or reliability.</p>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="p-6 md:p-20">
                     <h1 className="text-white text-h1sm md:text-h1md lg:text-h1lg font-extrabold leading-normal font-raleway">
                         OUR VALUES

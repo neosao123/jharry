@@ -3,6 +3,9 @@ import { PiTruckFill } from "react-icons/pi";
 import { RiTruckFill } from "react-icons/ri";
 import { TbUrgent } from "react-icons/tb";
 import Slider from "react-slick";
+import Truck from "../assets/truck.jpg"
+import TruckBgImage from "../assets/truckBgImage.jpg"
+import WhiteTruck from "../assets/whiteTruck.png";
 
 const CrossBorderShipping = () => {
 
@@ -47,13 +50,13 @@ const CrossBorderShipping = () => {
 
     return (
         <>
-            <section className="p-6 lg:p-20 bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-canada.png')] bg-center bg-no-repeat bg-cover">
+            <section style={{ backgroundImage: `url(${TruckBgImage})` }} className="p-6 lg:p-20 bg-center bg-no-repeat bg-cover">
                 <p className="text-customPrimaryColor text-lg ">Home / <span className="text-customWhiteColor font-gotham">Cross Border Shipping Services</span></p>
                 <h1 className="pt-4 text-customWhiteColor font-extrabold text-h1sm md:text-h1md lg:text-h1lg leading-normal font-ralway">CROSS BORDER SHIPING SERVICES</h1>
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Efficient and Reliable Freight Solutions Across the U.S., Canada, and Mexico</h4>
                 <p className="max-w-[1050px] text-white mt-4 font-gotham">Shipping goods across international borders can be complex, but with J&Harry Express, you can rely on our expertise to make the process smooth, cost-effective, and efficient. Our Cross Border Shipping Services provide a seamless solution for companies that need to transport goods between the U.S., Canada, and Mexico. Whether you're shipping raw materials, finished products, or anything in between, we offer reliable and timely freight services across North America.</p>
                 <p className="max-w-[1050px] text-white my-2 font-gotham">We specialize in managing the complexities of cross-border shipping, from customs documentation to route optimization, ensuring that your goods arrive on time and in perfect condition. With a fleet of well-maintained trucks and a dedicated logistics team, we are your trusted partner for cross-border freight transportation.</p>
-                <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button>
+                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button>
             </section>
             <section className="p-6 md:p-20">
                 <h1 className="text-customSecondaryBlack font-ralway md:mb-[15px] text-h1sm md:text-h1md lg:text-h1lg">WHAT IS CROSS BORDER SHIPPING?</h1>
@@ -69,7 +72,7 @@ const CrossBorderShipping = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Customs Brokerage Assistance</h4>
                 <p className="text-customSecondaryBlack text-lg max-w-[1200px] font-gotham mt-1" >We work with trusted customs brokers to handle the clearance process at both U.S. and Canadian/Mexican borders, ensuring a hassle-free experience for your freight.</p>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg tfont-extrabold text-white font-ralway leading-normal" >HOW OUR CROSS BORDER SHIPPING SERVICE WORKS</h2>
                     <h4 className="mt-4 text-5xl font-extrabold text-white text leading-normal font-ralway" >Simplified, Transparent, and Secure Cross-Border Freight Solutions</h4>
@@ -202,7 +205,7 @@ const CrossBorderShipping = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" >TYPES OF SHIPMENTS WE HANDLE ACROSS BORDERS</h2>
                     <p className="text-md leading-normal text-white mt-6 font-gotham" >Our cross-border shipping services cater to a wide range of industries and types of freight. Here are some of the most common types of shipments we handle between the U.S., Canada, and Mexico:</p>
@@ -266,18 +269,15 @@ const CrossBorderShipping = () => {
                     </Slider>
                 </div>
             </section>
-            <section className="relative lg:pt-[0px] lg:pt-[150px]">
-                <div className="block lg:hidden bg-customPrimaryColor p-6 md:hidden border-0" >
-                    <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
-                </div>
-                <div className="bg-customPrimaryColor py-20 p-6 md:px-20">
+            <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
+                <div className="p-6 md:w-[60%]">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE<br className="lg:hidden" /> FOR CROSS <br />BORDER SHIPPING</h2>
-                    <p className="text-lg my-5 text-white mt-4 lg:max-w-[450px] font-gotham" >Ready to ship goods across the U.S., Canada, or Mexico? Our cross-border shipping services are designed to meet your needs, ensuring fast, secure, and efficient transportation of your freight.</p>
-                    <p className="text-lg my-5 text-white mt-4 lg:max-w-[450px] font-gotham" >Provide us with the details of your shipment, including size, destination, and any specific requirements, and we’ll give you a customized quote.</p>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to ship goods across the U.S., Canada, or Mexico? Our cross-border shipping services are designed to meet your needs, ensuring fast, secure, and efficient transportation of your freight.</p>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Provide us with the details of your shipment, including size, destination, and any specific requirements, and we’ll give you a customized quote.</p>
                     <button className="text-lg text-white bg-btnColor px-10 py-2 rounded-md font-gotham">Request a Quote</button>
                 </div>
-                <div className="hidden lg:block absolute bottom-[65%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px] md:bottom-[100px]" >
-                    <img className="md:w-[400px] xl:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
+                <div className="md:w-[40%]">
+                    <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />
                 </div>
             </section>
         </>

@@ -4,6 +4,10 @@ import { RiTruckFill } from "react-icons/ri";
 import { TbUrgent } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import Truck from "../assets/truck.jpg";
+import TruckBgImage from "../assets/truckBgImage.jpg";
+import WhiteTruck from "../assets/whiteTruck.png";
+
 
 const Expedited = () => {
 
@@ -44,13 +48,13 @@ const Expedited = () => {
 
     return (
         <>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/03/main_screen.webp')] bg-no-repeat bg-cover bg-center p-6 md:p-20">
+            <section style={{ backgroundImage: `url(${TruckBgImage})` }} className="bg-no-repeat bg-cover bg-center p-6 md:p-20">
                 <p className="text-customPrimaryColor text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Expedited Loads Service</span></p>
                 <h1 className="text-white text-h1sm md:text-h1md lg:text-h1lg font-ralway md:mb-[15px]">EXPEDITED LOADS SERVICE</h1>
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Fast, Reliable Shipping for Time-Sensitive Freight</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When time is of the essence, you need a logistics partner you can trust to deliver your goods quickly and efficiently. At <span className="font-ralway font-[900]">J&Harry Express</span>, we specialize in <span className="font-ralway font-[900]">Expedited Loads Services</span>, offering fast, reliable transportation solutions for urgent shipments that need to reach their destination without delay. Whether you’re dealing with an unexpected order, emergency restocking, or any other time-sensitive freight, we’re here to help you get your goods delivered on time, every time.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >With our fleet of well-maintained trucks and experienced drivers, we ensure that your expedited loads are handled with the highest level of care, speed, and reliability. We offer customized solutions for businesses that need fast delivery—whether it’s across town, across the country, or even cross-border. Our expedited services prioritize your shipment, ensuring direct routes, fewer stops, and real-time updates.</p>
-                <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
             </section>
             <section className="p-6 md:p-20">
                 <h1 className="text-customSecondaryBlack font-ralway md:mb-[15px] text-h1sm md:text-h1md lg:text-h1lg">WHAT IS EXPEDITED SHIPPING?</h1>
@@ -67,7 +71,7 @@ const Expedited = () => {
                 <p className="text-customSecondaryBlack text-lg max-w-[1200px] font-gotham mt-1" >Expedited shipping for expensive or delicate items that need secure, timely delivery.</p>
                 <p className="text-customSecondaryBlack text-lg max-w-[1200px] font-gotham mt-6" >Expedited freight services are commonly utilized by industries such as manufacturing, retail, healthcare, automotive, and more.</p>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" > HOW OUR EXPEDITED LOADS SERVICE WORKS</h2>
                     <h4 className="mt-4 text-5xl font-extrabold text-white text leading-normal font-ralway" >Fast, Transparent, and Stress-Free Shipping for Your Urgent Needs</h4>
@@ -191,7 +195,7 @@ const Expedited = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-20 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-20 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" >TYPES OF SHIPMENTS IDEAL FOR EXPEDITED LOADS</h2>
                     <p className="text-md leading-normal text-white mt-4 font-gotham" >Our expedited freight services are perfect for a wide range of urgent and high-priority shipments. Here are some examples of the types of loads we commonly handle:</p>
@@ -255,18 +259,15 @@ const Expedited = () => {
                     </Slider>
                 </div>
             </section>
-            <section className="relative md:pt-[250px]">
-                <div className="bg-customPrimaryColor p-6 md:hidden border-0" >
-                    <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
-                </div>
-                <div className="bg-customPrimaryColor p-6 md:py-20 md:px-20">
-                    <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway lg:w-[50%]">GET A QUOTE FOR EXPEDITED LOADS</h2>
-                    <p className="text-lg my-5 text-white mt-4 sm:max-w-[50%] font-gotham" >Need fast, reliable, and secure transportation for your time-sensitive freight? Get in touch with us today for a custom quote for your expedited shipping needs.</p>
-                    <p className="text-lg my-5 text-white mt-4 sm:max-w-[50%] font-gotham" >Provide us with the details of your shipment, including the destination, weight, and urgency, and we will offer you the best expedited shipping solution tailored to your needs.</p>
+            <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
+                <div className="p-6 md:w-[60%]">
+                    <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE FOR EXPEDITED LOADS</h2>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Need fast, reliable, and secure transportation for your time-sensitive freight? Get in touch with us today for a custom quote for your expedited shipping needs.</p>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Provide us with the details of your shipment, including the destination, weight, and urgency, and we will offer you the best expedited shipping solution tailored to your needs.</p>
                     <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
                 </div>
-                <div className="hidden md:block absolute bottom-[70%] md:bottom-[20%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px]" >
-                    <img className="md:w-[400px] xl:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
+                <div className="md:w-[40%]">
+                    <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />
                 </div>
             </section>
         </>

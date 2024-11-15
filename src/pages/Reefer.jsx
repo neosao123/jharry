@@ -3,6 +3,9 @@ import { PiTruckFill } from "react-icons/pi";
 import { RiTruckFill } from "react-icons/ri";
 import { TbUrgent } from "react-icons/tb";
 import Slider from "react-slick";
+import Truck from "../assets/truck.jpg";
+import TruckBgImage from "../assets/truckBgImage.jpg";
+import WhiteTruck from "../assets/whiteTruck.png";
 
 const Reefer = () => {
 
@@ -43,13 +46,13 @@ const Reefer = () => {
 
     return (
         <>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/03/main_screen.webp')] bg-no-repeat bg-cover bg-center p-6 lg:p-20">
+            <section style={{ backgroundImage: `url(${TruckBgImage})` }} className="bg-no-repeat bg-cover bg-center p-6 lg:p-20">
                 <p className="text-customPrimaryColor text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Reefer</span></p>
                 <h1 className="text-white text-h1sm md:text-h1md lg:text-h1lg font-ralway md:mb-[15px]">REEFER SERVICES</h1>
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Reliable Temperature-Controlled Solutions for Your Sensitive Freight</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When your goods require a specific temperature range to ensure they arrive in optimal condition, look no further than <span className="font-ralway font-[900]">J&Harry Express's Reefer Services</span>. Our fleet of state-of-the-art refrigerated trucks (reefers) is designed to handle temperature-sensitive shipments with the highest level of care and efficiency. Whether you're transporting perishable food, pharmaceuticals, or other temperature-controlled products, we provide reliable and secure transportation to meet your exact needs.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >We understand the critical importance of maintaining the proper temperature throughout the journey, and we are committed to ensuring your shipment arrives at its destination in perfect condition—on time and within your required temperature range.</p>
-                <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+                <button className="text-lg text-white bg-customSecondaryColorc px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
             </section>
             <section className="p-6 md:p-20 bg-[#f6f6f6]">
                 <div className="pb-6 md:pb-10 md:w-[75%] flex flex-col justify-center items-start">
@@ -110,7 +113,7 @@ const Reefer = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-services.png')] bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
+            <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
                 <div className="md:w-[75%] p-6 md:p-20 flex flex-col justify-center items-start">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-white font-ralway leading-normal" > HOW OUR REEFER SERVICE WORKS</h2>
                     <h4 className="mt-4 text-5xl font-extrabold text-white text leading-normal font-ralway" >Efficient and Reliable Temperature-Controlled Shipping</h4>
@@ -234,15 +237,15 @@ const Reefer = () => {
                     </div>
                 </div>
             </section>
-            <section className="relative pt-[150px] lg:pt-[250px]">
-                <div className="bg-customPrimaryColor p-6 py-20 md:px-20">
-                    <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway lg:w-[50%]">GET A QUOTE FOR REEFER TRUCKING SERVICES</h2>
-                    <p className="text-lg my-5 text-white mt-4 sm:max-w-[50%] font-gotham" >Are you ready to ship your temperature-sensitive freight with J&Harry Express ? Our team is here to provide you with a reliable and cost-effective solution for all your refrigerated shipping needs.</p>
-                    <p className="text-lg my-5 text-white mt-4 sm:max-w-[50%] font-gotham" >Simply provide us with the details of your shipment, including size, weight, and temperature requirements, and we will work with you to design the ideal shipping solution.</p>
+            <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
+                <div className="p-6 md:w-[60%]">
+                    <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE FOR REEFER TRUCKING SERVICES</h2>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Are you ready to ship your temperature-sensitive freight with J&Harry Express ? Our team is here to provide you with a reliable and cost-effective solution for all your refrigerated shipping needs.</p>
+                    <p className="text-lg my-5 text-white mt-4 font-gotham" >Simply provide us with the details of your shipment, including size, weight, and temperature requirements, and we will work with you to design the ideal shipping solution.</p>
                     <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
                 </div>
-                <div className="absolute bottom-[70%] md:bottom-[20%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px]" >
-                    <img className="md:w-[400px] xl:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />
+                <div className="md:w-[40%]">
+                    <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />
                 </div>
             </section>
         </>
