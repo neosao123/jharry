@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    max-width: 100wh !important;
+}
+
+.font-ralway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-gotham {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Gotham Pro", sans-serif !important; */
+}
+
+h1 {
+    /* font-size: 50px !important;
+    line-height: 65px !important; */
+    font-weight: 900 !important;
+    font-family: "Ralway", sans-serif !important;
+}
+
+h2 {
+    /* font-size: 48px !important;
+    line-height: 64px !important; */
+    font-weight: 800 !important;
+    font-family: "Ralway", sans-serif !important;
+}
+
+h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+}
+
+h3 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 39px !important;
+}
+
+p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    font-family: "Gotham Pro", sans-serif !important;
+}
+
+
+.custom-bullet li::marker {
+    color: #20c4f4 !important;
+    font-size: 1.75rem;
+}
+
+
+.slick-dots {
+    bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 18px !important;
+    color: #202020 !important;
+}
+
+
+.slick-dots li.slick-active button:before {
+    color: #20c4f4 !important;
+}
