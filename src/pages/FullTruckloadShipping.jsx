@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import TruckBgImage from "../assets/truckBgImage.jpg";
 import Truck from "../assets/truck.jpg"
 import WhiteTruck from "../assets/whiteTruck.png";
+import { Link } from "react-router-dom";
 
 const FullTruckLoadShipping = () => {
 
@@ -55,7 +56,7 @@ const FullTruckLoadShipping = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Reliable, Timely, and Cost-Effective Freight Solutions for Large Shipments</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When you have a large shipment that requires the full use of a truck, look no further than Full Truckload (FTL) service with J&Harry Express. FTL is the ideal solution for businesses with large or high-priority freight that needs to reach its destination quickly, safely, and securely. With our FTL services, your shipment gets the exclusive use of an entire truck, ensuring that it moves directly from point A to point B without the delays or stops associated with Less Than Truckload (LTL) shipping.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >Our team of experienced professionals and well-maintained fleet ensures that your goods arrive on time and in excellent condition—no matter the distance. Whether you’re shipping across town, across the country, or even across the border, we have the right solution for your needs.</p>
-                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+                <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
             </section >
             <section className="p-6 md:p-20">
                 <h1 className="text-h1sm md:text-h1md lg:text-h1lg text-customSecondaryBlack font-ralway md:mb-[15px]">WHAT IS FULL TRUCKLOAD (FTL) SERVICE?</h1>
@@ -237,7 +238,7 @@ const FullTruckLoadShipping = () => {
                     <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway">GET A QUOTE<br className="lg:hidden" /> FOR FTL <br />SERVICE</h2>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to ship your large freight? Get in touch with us today for a free, no-obligation quote for your Full Truckload shipping needs. Our team will provide you with a competitive rate and work with you to create the best shipping solution for your business.</p>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Simply provide us with the details of your shipment, including its size, weight, and delivery destination, and we’ll get back to you with a tailored shipping solution.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

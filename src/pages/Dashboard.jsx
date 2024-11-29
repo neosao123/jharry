@@ -8,6 +8,9 @@ import { PiTruckFill } from "react-icons/pi";
 import { TbUrgent } from "react-icons/tb";
 import Truck from "../assets/truck.jpg";
 import WhiteTruck from "../assets/whiteTruck.png"
+import TruckBack from "../assets/truckBack.webp"
+import trucks from "../assets/trucks.jpg"
+import trucknature from "../assets/trucknature.avif"
 
 const Dashboard = () => {
 
@@ -52,22 +55,27 @@ const Dashboard = () => {
 
     return (
         <>
-            <section className="flex bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/trailer-min.png')] bg-bottom md:bg-right bg-no-repeat bg-contain p-6 pb-80 md:p-20">
-                <div>
-                    <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">WELCOME TO J&HARRY EXPRESS</h1>
-                    <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway break-words">Dependable. Efficient. Trusted Nationwide.</h4>
-                    <p className="text-md text-customPrimaryBlack max-w-[800px] mt-8 font-gotham" >At <span className="text-[#000000] font-ralway font-[900]">J&Harry Express</span>, we pride ourselves on delivering freight solutions that are as reliable as they are efficient. With years of experience, a fleet of modern, well-maintained trucks, and a team of dedicated professionals, we’ve built a reputation for getting goods where they need to be—on time, in perfect condition, and at a competitive price.</p>
-                    <p className="text-md text-customPrimaryBlack max-w-[800px] mt-6 mb-20 md:mb-0 font-gotham" >Whether you're shipping a single pallet across town or need to haul large, specialized equipment across the country, J&Harry Express has the expertise, equipment, and commitment to handle any freight challenge. Our mission is simple: to provide safe, reliable, and cost-effective transportation services that help your business thrive.</p>
+            <section className="flex flex-col md:flex-row">
+                <div className="md:w-[55%] p-6 md:p-20">
+                    <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customSecondaryBlack leading-normal font-ralway ">WELCOME TO J&HARRY EXPRESS</h1>
+                    <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack leading-normal font-ralway break-words">Dependable. Efficient. Trusted Nationwide.</h4>
+                    <p className="text-md text-customPrimaryBlack mt-8 font-gotham" >At <span className="text-[#000000] font-ralway font-[900]">J&Harry Express</span>, we pride ourselves on delivering freight solutions that are as reliable as they are efficient. With years of experience, a fleet of modern, well-maintained trucks, and a team of dedicated professionals, we’ve built a reputation for getting goods where they need to be—on time, in perfect condition, and at a competitive price.</p>
+                    <p className="text-md text-customPrimaryBlack mt-6 mb-20 md:mb-0 font-gotham" >Whether you're shipping a single pallet across town or need to haul large, specialized equipment across the country, J&Harry Express has the expertise, equipment, and commitment to handle any freight challenge. Our mission is simple: to provide safe, reliable, and cost-effective transportation services that help your business thrive.</p>
+                </div>
+                <div className="md:w-[45%] p-6 md:p-0 flex justify-center items-center">
+                    <img className="rounded-2xl" src={TruckBack} alt="truck" />
                 </div>
             </section>
-            <section className="flex p-6 md:p-20 bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-home.png')] bg-cover bg-no-repeat bg-center">
-                <div className="w-[0%] md:w-[40%]"></div>
-                <div className="md:w-[60%]">
+            <section className="flex flex-col md:flex-row p-6 md:p-20">
+                <div className="py-6 md:w-[40%] rounded-2xl flex justify-center items-center overflow-hidden">
+                    <img src={trucks} alt="truck" className="h-[100%] rounded-2xl" />
+                </div>
+                <div className="md:w-[60%] md:px-20">
                     <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customPrimaryBlack font-ralway">WHY J&HARRY EXPRESS ?</h1>
-                    <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">Your Business Deserves the Best in Freight Solutions</h4>
-                    <p className="mt-6 text-customSecondaryBlack leading-normal text-md md:max-w-[95%] font-gotham">In today’s fast-paced economy, time is money, and reliability is key. J&Harry Express understands the pressure to meet deadlines, reduce costs, and ensure smooth supply chain operations. That’s why we’ve invested in cutting-edge technology, top-of-the-line equipment, and the best drivers in the industry. When you work with us, you’re working with a team that cares about your cargo just as much as you do.</p>
+                    <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack leading-normal font-ralway ">Your Business Deserves the Best in Freight Solutions</h4>
+                    <p className="mt-6 text-customSecondaryBlack leading-normal text-md font-gotham">In today’s fast-paced economy, time is money, and reliability is key. J&Harry Express understands the pressure to meet deadlines, reduce costs, and ensure smooth supply chain operations. That’s why we’ve invested in cutting-edge technology, top-of-the-line equipment, and the best drivers in the industry. When you work with us, you’re working with a team that cares about your cargo just as much as you do.</p>
                     <div className="flex gap-10 items-center justify-start">
-                        <button type="button" className="text-lg text-white bg-btnColor px-10 py-3 mt-8 rounded-md">Request a Quote</button>
+                        <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                         <Link className="">
                             <button type="button" className="text-lg bg-none text-btnColor border-0 border-b-2 border-customPrimaryBlack mt-8 rounded-none leading-normal hover:text-customPrimaryColor hover:border-customPrimaryColor">Learn More</button>
                         </Link>
@@ -244,12 +252,14 @@ const Dashboard = () => {
                 </div>
             </section>
 
-            <section className="flex p-6 md:p-20 bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-home.png')] bg-cover bg-no-repeat bg-center">
-                <div className="w-[0%] md:w-[40%]"></div>
-                <div className="md:w-[60%]">
+            <section className="flex flex-col md:flex-row p-6 md:p-20">
+                <div className="md:w-[60%] md:px-20">
                     <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customPrimaryBlack font-ralway">SERVING YOU A NATIONWIDE</h1>
                     <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">Local, Regional, and Long-Distance Deliveries</h4>
                     <p className="mt-6 text-customSecondaryBlack leading-normal text-md md:max-w-[95%] font-gotham">J&Harry Express serves clients across the nation, offering transportation solutions that meet the needs of businesses large and small. Wherever your goods need to go, we’re ready to make it happen.</p>
+                </div>
+                <div className="py-6 md:p-0 md:w-[40%] rounded-2xl overflow-hidden">
+                    <img className="rounded-2xl h-[100%]" src={trucknature} alt="truck" />
                 </div>
             </section>
             <section className="flex md:p-20 flex-col-reverse md:flex-row bg-customPrimaryColor">
@@ -257,7 +267,7 @@ const Dashboard = () => {
                     <h2 className="text-h2sm md:text-h2md lg:text-h2lg font-bold text-white leading-normal font-ralway">REQUEST A FREE QUOTE TODAY</h2>
                     <h4 className="mt-4 text-5xl font-extrabold text-white leading-normal font-ralway ">Let’s Get Your Freight Moving</h4>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to streamline your shipping process with a reliable, cost-effective trucking partner? Get in touch with us today to request a free quote. Whether you need full truckload shipping, expedited delivery, or specialized hauling, we’ll provide you with an accurate estimate tailored to your needs.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

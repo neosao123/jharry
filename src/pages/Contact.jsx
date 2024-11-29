@@ -47,7 +47,7 @@ const Contact = () => {
 
     return (
         <>
-            <section style={{ backgroundImage: `url(${RedBg})` }} className="p-20 h-[500px]" >
+            <section className="p-20 h-[500px] bg-customPrimaryColor" >
                 <p className="text-customSecondaryBlack text-lg ">Home <span className="text-customWhiteColor font-gotham">/ Contact Us</span></p>
                 <h1 className="pt-8 text-customWhiteColor font-extrabold text-h1sm md:text-h1md lg:text-h1lg leading-normal font-ralway">CONTACT US</h1>
             </section>
@@ -132,7 +132,7 @@ const Contact = () => {
                                 <label className="text-[#c1c1c1] text-sm ms-2 font-gotham">By checking this box, you agree to receive text messages from DeltaExpress Inc. You can reply “STOP” to opt-out at any time. Our <span className="text-customPrimaryColor">Privacy Policy.</span></label>
                             </div>
                             <div>
-                                <button type="submit" className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a quote</button>
+                                <button type="submit" className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
                             </div>
                         </form>
                     </div>

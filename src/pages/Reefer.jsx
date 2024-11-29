@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import Truck from "../assets/truck.jpg";
 import TruckBgImage from "../assets/truckBgImage.jpg";
 import WhiteTruck from "../assets/whiteTruck.png";
+import { Link } from "react-router-dom";
 
 const Reefer = () => {
 
@@ -52,7 +53,7 @@ const Reefer = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Reliable Temperature-Controlled Solutions for Your Sensitive Freight</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When your goods require a specific temperature range to ensure they arrive in optimal condition, look no further than <span className="font-ralway font-[900]">J&Harry Express's Reefer Services</span>. Our fleet of state-of-the-art refrigerated trucks (reefers) is designed to handle temperature-sensitive shipments with the highest level of care and efficiency. Whether you're transporting perishable food, pharmaceuticals, or other temperature-controlled products, we provide reliable and secure transportation to meet your exact needs.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >We understand the critical importance of maintaining the proper temperature throughout the journey, and we are committed to ensuring your shipment arrives at its destination in perfect condition—on time and within your required temperature range.</p>
-                <button className="text-lg text-white bg-customSecondaryColorc px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+                <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
             </section>
             <section className="p-6 md:p-20 bg-[#f6f6f6]">
                 <div className="pb-6 md:pb-10 md:w-[75%] flex flex-col justify-center items-start">
@@ -242,7 +243,7 @@ const Reefer = () => {
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE FOR REEFER TRUCKING SERVICES</h2>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Are you ready to ship your temperature-sensitive freight with J&Harry Express ? Our team is here to provide you with a reliable and cost-effective solution for all your refrigerated shipping needs.</p>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Simply provide us with the details of your shipment, including size, weight, and temperature requirements, and we will work with you to design the ideal shipping solution.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

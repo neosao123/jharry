@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import Truck from "../assets/truck.jpg"
 import TruckBgImage from "../assets/truckBgImage.jpg"
 import WhiteTruck from "../assets/whiteTruck.png";
+import CS from "../assets/CS.webp"
+import { Link } from "react-router-dom";
 
 const CrossBorderShipping = () => {
 
@@ -56,7 +58,7 @@ const CrossBorderShipping = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Efficient and Reliable Freight Solutions Across the U.S., Canada, and Mexico</h4>
                 <p className="max-w-[1050px] text-white mt-4 font-gotham">Shipping goods across international borders can be complex, but with J&Harry Express, you can rely on our expertise to make the process smooth, cost-effective, and efficient. Our Cross Border Shipping Services provide a seamless solution for companies that need to transport goods between the U.S., Canada, and Mexico. Whether you're shipping raw materials, finished products, or anything in between, we offer reliable and timely freight services across North America.</p>
                 <p className="max-w-[1050px] text-white my-2 font-gotham">We specialize in managing the complexities of cross-border shipping, from customs documentation to route optimization, ensuring that your goods arrive on time and in perfect condition. With a fleet of well-maintained trucks and a dedicated logistics team, we are your trusted partner for cross-border freight transportation.</p>
-                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button>
+                <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
             </section>
             <section className="p-6 md:p-20">
                 <h1 className="text-customSecondaryBlack font-ralway md:mb-[15px] text-h1sm md:text-h1md lg:text-h1lg">WHAT IS CROSS BORDER SHIPPING?</h1>
@@ -274,7 +276,7 @@ const CrossBorderShipping = () => {
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE<br className="lg:hidden" /> FOR CROSS <br />BORDER SHIPPING</h2>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Ready to ship goods across the U.S., Canada, or Mexico? Our cross-border shipping services are designed to meet your needs, ensuring fast, secure, and efficient transportation of your freight.</p>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Provide us with the details of your shipment, including size, destination, and any specific requirements, and we’ll give you a customized quote.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-2 rounded-md font-gotham">Request a Quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-black px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

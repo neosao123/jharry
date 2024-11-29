@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <>
@@ -42,7 +44,7 @@ const Home = () => {
                 <div className="bg-customPrimaryColor py-20 px-20">
                     <h2 className="text-5xl font-bold text-white font-ralway">ASK US</h2>
                     <p className="text-lg my-5 text-white mt-4 max-w-[350px]" >Please fill out the form and one of our experts will contact you as soon as possible.</p>
-                    <button className="text-lg text-white bg-customPrimaryBlack px-10 py-3 rounded-md">Request a quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="absolute bottom-[55%] right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-[40px] md:bottom-[30px]" >
                     <img className="md:w-[400px] lg:w-[700px]" src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ask-images.png" alt="truck-image" />

@@ -54,7 +54,7 @@ const Expedited = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway" >Fast, Reliable Shipping for Time-Sensitive Freight</h4>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >When time is of the essence, you need a logistics partner you can trust to deliver your goods quickly and efficiently. At <span className="font-ralway font-[900]">J&Harry Express</span>, we specialize in <span className="font-ralway font-[900]">Expedited Loads Services</span>, offering fast, reliable transportation solutions for urgent shipments that need to reach their destination without delay. Whether you’re dealing with an unexpected order, emergency restocking, or any other time-sensitive freight, we’re here to help you get your goods delivered on time, every time.</p>
                 <p className="text-customWhiteColor text-lg max-w-[800px] font-gotham mt-4" >With our fleet of well-maintained trucks and experienced drivers, we ensure that your expedited loads are handled with the highest level of care, speed, and reliability. We offer customized solutions for businesses that need fast delivery—whether it’s across town, across the country, or even cross-border. Our expedited services prioritize your shipment, ensuring direct routes, fewer stops, and real-time updates.</p>
-                <button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a quote</button>
+                <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
             </section>
             <section className="p-6 md:p-20">
                 <h1 className="text-customSecondaryBlack font-ralway md:mb-[15px] text-h1sm md:text-h1md lg:text-h1lg">WHAT IS EXPEDITED SHIPPING?</h1>
@@ -264,7 +264,7 @@ const Expedited = () => {
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE FOR EXPEDITED LOADS</h2>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Need fast, reliable, and secure transportation for your time-sensitive freight? Get in touch with us today for a custom quote for your expedited shipping needs.</p>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Provide us with the details of your shipment, including the destination, weight, and urgency, and we will offer you the best expedited shipping solution tailored to your needs.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a Quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

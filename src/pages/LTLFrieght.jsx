@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Truck from "../assets/truck.jpg"
 import TruckBgImage from "../assets/truckBgImage.jpg";
-import WhiteTruck from "../assets/whiteTruck.png"
+import WhiteTruck from "../assets/whiteTruck.png";
+import TruckLoad from "../assets/Truckload.webp"
 
 const LTLFrieght = () => {
 
@@ -53,7 +54,7 @@ const LTLFrieght = () => {
                 <h4 className="mt-4 text-5xl font-extrabold text-white sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway">Dependable. Efficient. Trusted Nationwide.</h4>
                 <p className="text-customWhiteColor text-lg md:max-w-[60%] mt-6 font-gotham">At <span className="font-ralway font-[900]">J&Harry Express</span>, we understand that not every shipment requires an entire truck. That’s why we offer <span className="font-ralway font-[900]">Less Than Truckload (LTL) service</span>—a cost-effective and flexible solution for businesses that need to ship smaller loads but still want the reliability and efficiency of a professional trucking service. With LTL, your goods share space with other shipments, which helps reduce costs while maintaining the safety and timeliness of your delivery.</p>
                 <p className="text-customWhiteColor text-lg md:max-w-[60%] mt-4 font-gotham">Whether you’re shipping across town or across the country, our LTL services provide an affordable and efficient way to meet your freight needs without the need for a full truckload. Here’s everything you need to know about our LTL services.</p>
-                <button type="button" className="text-lg text-white bg-customSecondaryColor px-10 py-3 mt-6 mb-20 rounded-md font-gotham">Request a quote</button>
+                <button type="button" className="text-lg text-white bg-customSecondaryColor px-10 py-3 mt-6 mb-20 rounded-md font-gotham">Request a Quote</button>
             </section>
             <section className="p-8 md:px-20 md:py-10 flex flex-col md:flex-row gap-10">
                 <div className="md:w-[55%] md:p-10 flex flex-col justify-center items-start">
@@ -63,7 +64,7 @@ const LTLFrieght = () => {
                     <p className="text-md leading-normal text-customSecondaryBlack mt-4 font-gotham" >With LTL service, your goods will be combined with those of other customers to maximize efficiency, reduce Service costs, and allow for faster delivery times. Despite sharing space with other shipments, your goods are handled separately and securely, ensuring they arrive at their destination safely.</p>
                 </div>
                 <div className="md:w-[45%] md:p-10">
-                    <img src="https://deltaexpressinc.com/wp-content/uploads/2023/01/ltl-freight-quote.png" alt="image" />
+                    <img src={TruckLoad} className="h-[100%] rounded-3xl" alt="image" />
                 </div>
             </section>
             <section style={{ backgroundImage: `url(${Truck})` }} className="bg-no-repeat bg-cover bg-center pb-28 overflow-x-hidden">
@@ -207,7 +208,7 @@ const LTLFrieght = () => {
                 <div className="p-6 md:w-[60%]">
                     <h2 className="text-h1sm md:text-h1md lg:text-h1lg font-bold text-white font-ralway">GET A QUOTE<br className="lg:hidden" /> FOR LTL <br />SHIPPING</h2>
                     <p className="text-lg my-5 text-white mt-4 font-gotham" >Please fill out the form and one of our experts will contact you as soon as possible.</p>
-                    <button className="text-lg text-white bg-btnColor px-10 py-3 rounded-md font-gotham">Request a quote</button>
+                    <Link to={"/contact"}><button className="text-lg text-white bg-customSecondaryColor px-10 py-3 rounded-md mt-10 mb-10 font-gotham">Request a Quote</button></Link>
                 </div>
                 <div className="md:w-[40%]">
                     <img className="w-[100%]" src={WhiteTruck} alt="truck-image" />

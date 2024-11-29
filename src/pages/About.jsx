@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import BlurImage from "../assets/blurvan.png";
 import Truck from "../assets/truck.jpg"
+import TruckBack from "../assets/truckBack.webp"
+import Truck1 from "../assets/Truck1.png";
+import Truck2 from "../assets/truck2.png";
+import Truck3 from "../assets/Truck3.png";
+import trucks from "../assets/trucks.jpg"
+import trucknature from "../assets/trucknature.avif"
 
 const About = () => {
 
@@ -58,7 +64,7 @@ const About = () => {
                 </div>
                 <div className="lg:w-[50%] relative">
                     <div className="lg:rounded-s-2xl overflow-hidden lg:mt-32 lg:absolute lg:bottom-[-50px]">
-                        <img src="https://deltaexpressinc.com/wp-content/uploads/2022/12/about.png" alt="Truck-image" />
+                        <img src={TruckBack} alt="Truck-image" />
                     </div>
                 </div>
             </section>
@@ -183,7 +189,7 @@ const About = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-16">
                     <div className="rounded-md transition-all flex flex-col min-h-[350px] group">
                         <div className="rounded-2xl overflow-hidden h-[235px]">
-                            <img className="group-hover:scale-125 transition-all duration-200" src="https://overlandfreight.com/wp-content/uploads/2019/09/OF-Services_FullTruckload_White-Semi_@1x.jpg" alt="service-icon" />
+                            <img className="group-hover:scale-125 transition-all duration-200 bg-customPrimaryColor " src={Truck1} alt="service-icon" />
                         </div>
                         <h4 className="text-4xl font-semibold text-customSecondaryBlack group-hover:text-customSecondaryColor font-raleway my-2">Full Truckload (FTL)</h4>
                         <p className="leading-normal font-gotham">
@@ -192,8 +198,8 @@ const About = () => {
                         <Link className="my-2"><p className="text-3xl font-gotham text-customSecondaryBlack group-hover:text-customSecondaryColor font-semibold cursor-pointer">Read More.</p></Link>
                     </div>
                     <div className="rounded-md transition-all flex flex-col min-h-[350px] group">
-                        <div className="rounded-2xl overflow-hidden h-[235px]">
-                            <img className="group-hover:scale-125 transition-all duration-200" src="https://overlandfreight.com/wp-content/uploads/2019/09/OF-Services_FullTruckload_White-Semi_@1x.jpg" alt="service-icon" />
+                        <div className="rounded-2xl overflow-hidden h-[235px] bg-customPrimaryColor">
+                            <img className="group-hover:scale-125 transition-all duration-200" src={Truck2} alt="service-icon" />
                         </div>
                         <h4 className="text-4xl font-semibold text-customSecondaryBlack group-hover:text-customSecondaryColor font-raleway my-2">Less Than Truckload (LTL)</h4>
                         <p className="leading-normal font-gotham">
@@ -202,8 +208,8 @@ const About = () => {
                         <Link className="my-2"><p className="text-3xl font-gotham text-customSecondaryBlack group-hover:text-customSecondaryColor font-semibold cursor-pointer">Read More.</p></Link>
                     </div>
                     <div className="rounded-md transition-all flex flex-col min-h-[350px] group">
-                        <div className="rounded-2xl overflow-hidden h-[235px]">
-                            <img className="group-hover:scale-125 transition-all duration-200" src="https://overlandfreight.com/wp-content/uploads/2019/09/OF-Services_FullTruckload_White-Semi_@1x.jpg" alt="service-icon" />
+                        <div className="rounded-2xl overflow-hidden h-[235px] bg-customPrimaryColor">
+                            <img className="group-hover:scale-125 transition-all duration-200 w-[100%]" src={Truck3} alt="service-icon" />
                         </div>
                         <h4 className="text-4xl font-semibold text-customSecondaryBlack group-hover:text-customSecondaryColor font-raleway my-2">Refrigerated Trailers</h4>
                         <p className="leading-normal font-gotham">
@@ -213,21 +219,25 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="flex p-6 md:p-20 bg-[url('https://deltaexpressinc.com/wp-content/uploads/2023/01/bk-home.png')] bg-cover bg-no-repeat bg-center">
-                <div className="w-[0%] md:w-[40%]"></div>
-                <div className="md:w-[60%]">
+            <section className="flex flex-col-reverse md:flex-row p-6 md:p-20">
+                <div className="py-6 md:p-0 md:w-[40%] rounded-2xl overflow-hidden">
+                    <img className="rounded-2xl h-[100%]" src={trucknature} alt="truck" />
+                </div>
+                <div className="md:w-[60%] md:px-20">
                     <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customPrimaryBlack font-ralway">OUR SERVICE AREAS</h1>
                     <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">Serving Customers Across the Nation and Beyond</h4>
                     <p className="mt-6 text-customSecondaryBlack leading-normal text-md md:max-w-[95%] font-gotham">While our headquarters are based in [Location], we offer comprehensive freight services across the United States and internationally. We provide local, regional, and national deliveries, and we specialize in cross-border shipping between the USA, Canada, and Mexico.</p>
                 </div>
             </section>
-            <section style={{ backgroundImage: `url(${BlurImage})` }} className="flex p-6 md:p-20  bg-cover bg-no-repeat bg-center">
+            <section className="flex flex-col md:flex-row p-6 md:p-20">
                 <div className="md:w-[60%]">
                     <h1 className="text-h1sm md:text-h1md lg:text-h1lg font-extrabold text-customPrimaryBlack font-ralway">OUR COMMITMENT TO SUSTAINABILITY</h1>
                     <h4 className="mt-4 text-5xl font-extrabold text-customSecondaryBlack sm:max-w-[70%] md:max-w-[70%] leading-normal font-ralway ">Building a Greener Future, One Mile at a Time</h4>
                     <p className="mt-6 text-customSecondaryBlack leading-normal text-md md:max-w-[95%] font-gotham">At J&Harry Express, we are committed to reducing our environmental impact. We continually seek ways to improve the fuel efficiency of our fleet, reduce emissions, and implement sustainable practices across our operations. From optimizing delivery routes to investing in newer, cleaner technology, we are doing our part to protect the planet.</p>
                 </div>
-                <div className="w-[0%] md:w-[40%]"></div>
+                <div className="md:w-[45%] py-6 md:p-0 flex justify-center items-center">
+                    <img className="rounded-2xl" src={TruckBack} alt="truck" />
+                </div>
             </section>
         </>
     )
